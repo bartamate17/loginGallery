@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+body {
+    background-color: #5ab1bb;
+    font-family: "Lato";
+}
+
+h1 {
+    font-size: 20px !important;
+    text-align: center;
+    color: #4e6766;
+}
+
+.formDiv {
+    border-radius: 30px;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 4%;
+    padding: 30px;
+    background-color: #f7dd72;
+}
+
+form {
+    margin: 10px 0;
+}
+
+.avatar {
+    width: 100%;
+    margin: auto;
+    width: 65px;
+    border-radius: 100px;
+    height: 65px;
+    background: #448ed3;
+    position: relative;
+    bottom: -15px;
+}
+
+.avatar img {
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+    margin: auto;
+    border: 3px solid #fff;
+    display: block;
+}
+
+label {
+    text-align: center;
+    margin: 15px 0;
+    display: block;
+    color: #4e6766;
+}
+
+.formDiv input {
+    border: none;
+    background: #fff;
+    font-family: Lato;
+    font-weight: 700;
+    display: block;
+    height: 40px;
+    outline: none;
+    width: calc(100% - 24px);
+    margin: auto;
+    padding: 6px 12px 6px 12px;
+}
+
+.bar {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+
+.bar i {
+    width: 95%;
+    margin: auto;
+    height: 1px;
+    display: block;
+    background: #d1d1d1;
+}
+
+.formDiv input[type="text"] {
+    border-radius: 7px 7px 0px 0px;
+}
+
+.formDiv input[type="password"] {
+    border-radius: 0px 0px 7px 7px;
+}
+
+.form3Example1q {
+    margin: 0 auto !important;
+}
+
+#passwordv2 {
+    margin-bottom: 30px !important;
+}
+
+#selectPosition {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    height: 50px !important;
+}
+
+h3 {
+    text-align: center !important;
+}
+
+#registerDescription {
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.registration_link {
+    color: #83afdf;
+    text-decoration: none;
+    font-size: 11px;
+    float: left;
+    margin: 10px;
+}
+
+.forgot_link {
+    color: #83afdf;
+    text-decoration: none;
+    font-size: 11px;
+    float: right;
+    margin-top: 8px;
+}
+
+.secret_link {
+    color: #83afdf;
+    text-decoration: none;
+}
+
+.errorText {
+    text-align: center;
+    padding: 10px;
+}
+
+.formDiv button {
+    width: 100%;
+    height: 65px;
+    border-radius: 7px;
+    background: #a5c882;
+    text-decoration: center;
+    border: none;
+    color: #4e6766;
+    margin-top: -5px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    outline: none;
+    font-size: 13px;
+    border-bottom: 3px solid #307d63;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+}
+
+#closeError {
+    width: 60px !important;
+}
+
+
+/* INDEX PAGE */
+
+#formDiv {
+    margin: 50px auto;
+    text-align: center;
+    max-width: 850px;
+    background-color: #f7dd72;
+    padding: 50px;
+}
+
+h2 {
+    color: #4e6766;
+    font-size: 18px;
+    text-align: center;
+}
+
+.registration_linkIndex {
+    color: #83afdf;
+    text-decoration: none;
+    font-size: 11px;
+    margin-top: 35px;
+    display: block;
+    text-align: center;
+}
