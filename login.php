@@ -2,8 +2,6 @@
 require_once "./dbconfig.php";
 session_start();
 
-$errorCheck = -1;
-
 function pageRedirect($page)
 {
     if (!@header("Location: " . $page))
@@ -38,9 +36,8 @@ if (isset($_SESSION["success"]) && $_SESSION["success"] == 1) {
 }
 
 $error = 0;
-$queryNumber = 0;
 
-//QUERY NUMBER - DATABASE
+//GET QUERY NUMBER FROM DATABASE
 $con = mysqli_connect($host, $username, $password, $dbname);
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -72,7 +69,6 @@ mysqli_close($con);
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <div class="formDiv">
@@ -87,6 +83,7 @@ mysqli_close($con);
             <input type="password" name="password" id="password" placeholder="Példajelszavam" required>
             <a href="register.php" class="registration_link">Regisztráció</a>
             <!-- <a href="" class="forgot_link">Elfelejtettem a jelszavam</a> -->
+            
             <?php
 
             function findUserByEmail($usersResult, $emailClient, $passwordClient)
@@ -119,7 +116,6 @@ mysqli_close($con);
                 $result = mysqli_query($con, $sql);
 
                 // Associative array
-
                 $error = findUserByEmail($result, $filteredEmail, $hashPass);
 
                 if (strlen($error) == 0) {
@@ -148,7 +144,6 @@ mysqli_close($con);
                     <div class="modal-backdrop fade show" id="backdrop" style="display: block;"></div>
             <?php
                 }
-                // Free result set
                 mysqli_free_result($result);
 
                 mysqli_close($con);
@@ -162,5 +157,4 @@ mysqli_close($con);
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>

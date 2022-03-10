@@ -95,7 +95,6 @@ $optionArray = ["Vezérigazgató", "Alkalmazott", "Vezető", "Eseti megbízott"]
                     $nameFiltered = filter_var($name, FILTER_SANITIZE_SPECIAL_CHARS);
                     $emailFiltered = filter_var($email, FILTER_SANITIZE_EMAIL);
 
-
                     if ($_SESSION["success"] == 1) {
 
                         $con = mysqli_connect($host, $username, $password, $dbname);
@@ -159,7 +158,7 @@ $optionArray = ["Vezérigazgató", "Alkalmazott", "Vezető", "Eseti megbízott"]
         }
     }
     ?>
-    
+
     <script src="script.js"></script>
 </body>
 

@@ -105,6 +105,7 @@ function pageRedirect($page)
     if (isset($_POST["nameUpload"])) {
         if (isset($_FILES["pictureUpload"])) {
             if ($_FILES["pictureUpload"]["error"] === 0 && $_FILES["pictureUpload"]["type"] == "image/jpeg") {
+
                 $pictureFrom = $_FILES["pictureUpload"]["tmp_name"];
                 $pictureName = $_FILES["pictureUpload"]["name"];
                 $pictureDescription = $_POST["nameUpload"];
